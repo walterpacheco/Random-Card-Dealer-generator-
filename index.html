@@ -4,25 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Random Card</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class="card">
-        <div class="suit" id="topSuit">
-            
-        </div>
-        <div class="cardValue">
-            <img class="image" src="images/king.png" alt="">
-
-        </div>
-        <div class="suit" id="bottonSuit">
-            
-        </div>
+    <div class="container">
+        <form
+      class="row d-flex flex-row align-items-center justify-content-center"
+      id="form"
+    >
+      <input
+        type="text"
+        class="col-1 form-control"
+        id="inputForCards"
+        placeholder="Number here"
+      />
+      <button class="col-1 btn ml-2 draw" id="draw" type="submit">
+        <img
+          class="myImg"
+          src="https://user-images.githubusercontent.com/7556992/40873751-80ac10be-6690-11e8-8e53-ee367daff5f0.png"
+        />
+        DRAW
+      </button>
+      <button class="col-1 btn ml-2 bubbleSort" id="bubbleSort" type="submit">
+        <img
+          class="myImg"
+          src="https://user-images.githubusercontent.com/7556992/40873751-80ac10be-6690-11e8-8e53-ee367daff5f0.png"
+        />
+        BUBBLE SORT
+      </button>
+      <button class="col-1 btn ml-2 selectSort" id="selectSort" type="submit">
+        <img
+          class="myImg"
+          src="https://user-images.githubusercontent.com/7556992/40873751-80ac10be-6690-11e8-8e53-ee367daff5f0.png"
+        />
+        SELECT SORT
+      </button>
+    </form>
+    <section
+      class="row d-flex flex-row align-items-center justify-content-center"
+      id="unorderedCard"
+    ></section>
+    <div class="row d-flex flex-row align-items-center justify-content-center">
+      <p class="paragraph">SORTING:</p>
     </div>
-    
-    <button class="button">Nueva carta</button>
-    
-    <script src="./js/main.js"></script>
+    <article
+      class="row d-flex flex-column justify-content-center"
+      id="sortCards"
+    ></article>
+    </div>
 </body>
 </html>
